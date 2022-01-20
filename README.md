@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+Spacestagram
+- - - -
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple web application that automatically generates the image of the day from NASA's api.
 
-## Available Scripts
 
-In the project directory, you can run:
+Technologies Used
+- - - -
+* Frontend - HTML, CSS, and JavaScript
+* Library - React
+* Backend - Node.JS, Express
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+About the app
+- - - -
 
-### `npm test`
+The webpage automatically generates the daily NASA API image along with a description, date, photographer's name. There is a ternary operator to handle a different HTMX display(loading screen) until the API is retrieved. Lastly, the heart at the buttom left of the image is clickable. Onclick, the heart changes colors to display a liked image, red is for liked.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Getting Started
+- - - -
+Frontend deployment - https://edward-cabral-spacestagram.netlify.app/
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* GitHub for Frontend - https://github.com/CabralE/spacestagram-client-vite
 
-### `npm run eject`
+Backend deployment - https://ed-spacestagram-shopify-backen.herokuapp.com/
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* GitHub for Backend - https://github.com/CabralE/spacestagram-client
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Future Enhancements and Challenges
+- - - -
+- [ ] I was getting a build.command error when deploying my frontend to Netlify if I used 'create-react-app'. I opted to use 'npm init vite' instead. This is my first time using Vite. I believe there are 'build.command' errors with the latest react. In particularly with 'CI=false npm run build'.
+- [ ] Add a Modal to inform user that the image has been liked/unliked, or a Sandwich Menu
+- [ ] Add a count for liked images
